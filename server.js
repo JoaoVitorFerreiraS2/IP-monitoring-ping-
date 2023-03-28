@@ -1,7 +1,7 @@
 const http = require('http');
 const ping = require('ping');
 
-const host = '192.168.1.145';
+const host = 'Put the desired IP';
 
 const server = http.createServer((req, res) => {
   ping.sys.probe(host, (isAlive) => {
@@ -17,5 +17,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(8080, () => {
-  console.log('Servidor rodando em http://localhost:8080/');
+  console.log('server running on http://localhost:8080/');
 });
