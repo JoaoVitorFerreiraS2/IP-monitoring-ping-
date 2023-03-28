@@ -1,0 +1,48 @@
+h1{
+  text-align: center;
+}
+
+#status-btn {
+    display: flex;
+    margin-top: 10px;
+    width: 72px;
+    height: 51px;
+    border-radius: 100px;
+}
+
+.verificar {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #9e0e0e;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 8px;
+    top: 80px;
+    fill: none;
+    stroke: #24ff07;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+
+
+  .verificar:hover {
+    transition: 1s ease-in-out;
+    background: #068a11;
+  }
+  
+  .verificar:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .verificar span {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 100;
+  }
